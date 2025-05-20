@@ -1,0 +1,130 @@
+.bottom-section {
+  display: flex;
+  align-items: center;
+  gap: 15.12px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 576px) {
+    margin-top: 9px;
+    gap: 5.86px;
+
+    .bottom-section {
+      &__location-select {
+        display: none;
+      }
+
+      &__icons-group {
+        display: none;
+      }
+
+      &__logo {
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      &__catalog-button {
+        font-size: 14px;
+        border-radius: 28.83px;
+        padding: 11.52px 13px;
+
+        img {
+          width: 16.01px;
+          height: 16.01px;
+          margin-right: 2.1px;
+        }
+      }
+
+      &__search-input {
+        border-radius: 10px;
+        padding: 9px 16px;
+        input {
+          font-size: 14px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__catalog-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 130px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  &__search-input {
+    display: flex;
+    align-items: center;
+    background-color: var(--el-bg-color);
+    border-radius: 12px;
+    padding: 15px 12px;
+    width: 523px;
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius: 12px;
+      font-size: 16px;
+      background-color: var(--el-bg-color);
+
+      &::placeholder {
+        color: #999;
+        background-color: var(--el-bg-color);
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  &__location-select {
+    padding: 15px 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--el-bg-color);
+    width: 253px;
+    outline: none;
+  }
+
+  &__icons-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: max-content;
+    height: fit-content;
+
+    &-button {
+      border-radius: 12px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--el-bg-color);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+:root {
+  margin: 0;
+  padding: 0 100px 0 100px;
+  @media screen and (max-width: 576px) {
+    padding: 0 20px 0 20px;
+  }
+}
+
+html.light {
+  --text-color: #000000;
+  --link-active-color: #000;
+  --el-bg-color: #f5f5f5;
+  --infcCard-bg-color: #f5f5f5;
+  --infoCard-bg-color-icon: #e1e1e1;
+  --infoCard-color-desc: rgba(51, 51, 51, 1);
+  --products-subtitle-color: #ea2427;
+  --products-nav-bg-color: #f5f5f5;
+  --products-title-color: ragba(255, 255, 255, 1);
+  --products-new-price: #3f3f3f;
+  --products-old-price: #rgba(51, 51, 51, 0.5);
+  --products-border-color: rgba(222, 222, 222, 1);
+  --products-basket-bg-color: #e1e1e1;
+}
+
+html.dark {
+  --text-color: #ffffff;
+  --link-active-color: #fff;
+  --el-bg-color: rgba(43, 43, 43, 1);
+  --infcCard-bg-color: rgba(43, 43, 43, 1);
+  --infoCard-bg-color-icon: rgba(63, 63, 63, 1);
+  --infoCard-color-desc: rgba(255, 255, 255, 0.5);
+  --products-subtitle-color: rgba(255, 255, 255, 0.5);
+  --products-nav-bg-color: rgba(43, 43, 43, 1);
+  --products-title-color: ragba(63, 63, 63, 1);
+  --products-new-price: #fff;
+  --products-old-price: rgba(255, 255, 255, 0.5);
+  --products-border-color: rgba(255, 255, 255, 0.5);
+  --products-basket-bg-color: rgba(63, 63, 63, 1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "SF Pro Display", sans-serif;
+}
