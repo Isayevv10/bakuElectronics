@@ -60,9 +60,9 @@ const Header = () => {
           <div className="bottom-section__icons-group-button" title="Compare">
             <img
               src={
-                theme === "light"
-                  ? "/icons/scales.svg"
-                  : "/icons/scalesLight.svg"
+                theme === "dark"
+                  ? "/icons/scalesLight.svg"
+                  : "/icons/scales.svg"
               }
               alt="scales"
             />
@@ -70,17 +70,17 @@ const Header = () => {
 
           <div className="bottom-section__icons-group-button" title="Cart">
             <img
-              src={theme === "light" ? "/icons/buy.svg" : "/icons/buyLight.svg"}
-              alt=""
+              src={theme === "dark" ? "/icons/buyLight.svg" : "/icons/buy.svg"}
+              alt="buy"
             />
           </div>
 
           <div className="bottom-section__icons-group-button" title="Wishlist">
             <img
               src={
-                theme === "light" ? "/icons/heart.svg" : "/icons/heartLight.svg"
+                theme === "dark" ? "/icons/heartLight.svg" : "/icons/heart.svg"
               }
-              alt=""
+              alt="heart"
             />
           </div>
 
@@ -90,11 +90,11 @@ const Header = () => {
           >
             <img
               src={
-                theme === "light"
-                  ? "/icons/profile.svg"
-                  : "/icons/profileLight.svg"
+                theme === "dark"
+                  ? "/icons/profileLight.svg"
+                  : "/icons/profile.svg"
               }
-              alt=""
+              alt="profile"
             />
           </div>
         </div>
