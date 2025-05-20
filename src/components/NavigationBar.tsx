@@ -7,7 +7,6 @@ import { useTheme } from "next-themes";
 
 const HeaderTopBarComponent = () => {
   const { theme, setTheme } = useTheme();
-  const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState("Aze");
   const [activeLink, setActiveLink] = useState(0);
   const [mounted, setMounted] = useState(false);
