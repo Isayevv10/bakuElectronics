@@ -39,7 +39,7 @@ const Header = () => {
           {}
           <img
             src={
-              theme === "light" ? "/icons/search.svg" : "/icons/searchLight.svg"
+              theme === "dark" ? "/icons/searchLight.svg" : "/icons/search.svg"
             }
             alt="search"
           />
