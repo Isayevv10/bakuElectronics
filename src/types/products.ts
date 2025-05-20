@@ -16,8 +16,8 @@ export interface Product {
   reviewCount: number;
   rate: number;
   image: string;
-  campaign_widgets: any[];
-  gift_widgets: any[];
+  campaign_widgets: unknown[];
+  gift_widgets: unknown[];
   is_online: boolean;
   is_basket: boolean;
   is_favorite: boolean;
